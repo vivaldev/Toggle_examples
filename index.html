@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Vanilla JavaScript Toggle</title>
+</head>
+
+<body>
+  <button id="toggle-button">Toggle</button>
+  <h3 id="text"></h3>
+  <script>
+    const button = document.getElementById('toggle-button');
+    const text = document.getElementById('text')
+    let isToggled = false;
+    button.addEventListener('click', function () {
+      isToggled = !isToggled;
+      if (isToggled) {
+        text.innerText = 'With Vanilla JS: I Shall Appear and Disappear again!';
+      } else {
+        text.innerText = '';
+      }
+    });
+  </script>
+</body>
+
+</html>
